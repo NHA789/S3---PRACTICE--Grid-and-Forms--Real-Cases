@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Container</title>
+    <style>
+        .body {
+            height: 100vh;
+            background-color: rgb(189, 189, 189);
+            margin: 0;
+            display: flex;
+            align-items: center; 
+            justify-content: center; 
+        }
+        .contain {
+            width: 650px;
+            height: 750px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(246, 246, 246);
+        }
+        .profile{
+            display: flex;
+            flex-direction: row;
+            margin: 40px;
+        }
+        .pfimg{
+            width: 80px;
+            height: 80px;
+            margin: 30px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+        .name
+        {   
+            padding-top:40px;
+            padding-bottom: 5px;
+            font-size: 20px;
+            
+        }
+
+        .date{
+            color:rgb(162, 162, 162);
+        }
+        .more{
+            width: 30px;
+            height: 35px;
+            display: flex;
+            margin-left: auto; 
+            margin-right: 30px;
+            margin-top: 30px;
+        }
+        
+        .post{
+            display: flex;
+            flex-direction:column;
+            padding-left: 50px;
+            
+            
+            
+        }
+        .postimg{
+            width: 550px;
+            height: 300px;
+            margin-top: -20px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .de{
+            display: flex;
+    
+            gap: 2rem;
+            padding-top: 20px;
+            
+            border-bottom: 1px solid #ccc;
+        }
+        .like, .cmt {
+            display: flex;
+            align-items: center; 
+            gap: 0.5rem; 
+            padding: 10px;
+        }
+
+        .likeimg, .cmtimg {
+            width: 25px;
+            height: 25px;
+        }
+
+        p {
+            margin: 0; }
+        
+        
+    </style>
+</head>
+<body class="body">
+    <div class="contain">
+        
+        <div class="profile">
+            <img class="pfimg" src="/pf.jpg" alt="">
+            <div class="text">
+            <div class="name"> <strong>Nha Sart</strong> share <strong>Bruno's </strong> video </div>
+            <div class="date">Yesterday at 8:44 PM</div>
+            
+        </div>
+        <img class="more" src="/img/more-fill.png" alt="">
+        </div>
+        
+        <div class="post">
+            <img class="postimg" src="/img/Screenshot 2024-11-19 204549.png" alt="">
+            <div class="de">
+                <div class="like">
+                    <img class="likeimg" src="/img/heart-line.png" alt="">
+                    <p>45 Likes</p>
+                </div>
+                <div class="cmt">
+                    <img class="cmtimg" src="/img/chat-2-line.png" alt="">
+                    <p>168 Comments</p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="comment"></div>
+    </div>
+</body>
+</html>
